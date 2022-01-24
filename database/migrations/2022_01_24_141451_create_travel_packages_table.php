@@ -21,6 +21,7 @@ class CreateTravelPackagesTable extends Migration
             $table->string('leaving_from', 200);
             $table->timestamp('departing')->nullable()->default(null);
             $table->timestamp('returning')->nullable()->default(null);
+            $table->timestamps();
         });
     }
 
